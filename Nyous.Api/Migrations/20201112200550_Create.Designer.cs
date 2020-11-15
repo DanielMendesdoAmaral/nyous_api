@@ -10,8 +10,8 @@ using Nyous.Api.Contexts;
 namespace Nyous.Api.Migrations
 {
     [DbContext(typeof(NyousContext))]
-    [Migration("20201020023900_Initial-Database")]
-    partial class InitialDatabase
+    [Migration("20201112200550_Create")]
+    partial class Create
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -66,6 +66,9 @@ namespace Nyous.Api.Migrations
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Descricao")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Link")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Nome")

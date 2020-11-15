@@ -5,8 +5,14 @@
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <DocumentationFile>C:\Users\Fernando Henrique\Documents\Senai\nyous_api\Nyous.Api\Nyous.Api.xml</DocumentationFile>
+    <DocumentationFile>C:\Users\Juninho\Desktop\Códigos Daniel\2S2DT-Sprint4-Mobile\Aulas\3- Nyous\api\nyous_api\Nyous.Api\Nyous.Api.xml</DocumentationFile>
+    <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Migrations\20201112195633_Create.cs" />
+    <Compile Remove="Migrations\20201112195633_Create.Designer.cs" />
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="3.1.9" />

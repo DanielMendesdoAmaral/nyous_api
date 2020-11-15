@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace Nyous.Api.Migrations
 {
-    public partial class InitialDatabase : Migration
+    public partial class Create : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -48,6 +48,7 @@ namespace Nyous.Api.Migrations
                     DataAlteracao = table.Column<DateTime>(nullable: false),
                     Nome = table.Column<string>(nullable: true),
                     UrlImagem = table.Column<string>(nullable: true),
+                    Link = table.Column<string>(nullable: true),
                     DataInicial = table.Column<DateTime>(nullable: false),
                     DataFinal = table.Column<DateTime>(nullable: false),
                     Descricao = table.Column<string>(nullable: true),
