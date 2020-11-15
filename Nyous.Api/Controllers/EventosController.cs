@@ -19,7 +19,6 @@ namespace Nyous.Api.Controllers
         }
 
         [HttpPost]
-        [Authorize(Roles = "Admin")]
         public IActionResult Cadastrar(EventoDTO evento)
         {
             try

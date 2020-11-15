@@ -30,7 +30,7 @@ namespace Nyous.Api.Utils
             //Aws,Azure,Cloud Storage
             //var urlImagem = Chamada ao método.Salvar(nomearquivo)
 
-            return "http://localhost:5000/upload/imagens/" + nomeArquivo;
+            return "http://192.168.1.104:5000/upload/imagens/" + nomeArquivo;
         }
     }
 }
